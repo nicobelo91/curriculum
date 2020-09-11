@@ -1,0 +1,247 @@
+body {
+  font-family: 'Poppins', sans-serif;
+    background-color:black;
+  }
+    main {
+    text-align: center;
+
+/* START NAV */
+
+  }
+  #navbar {
+    position: fixed;
+    background-image: linear-gradient(to right,#be3144,#990000);
+    width:100%;
+    top:0px;
+    overflow:hidden;
+  }
+    .nav-link{
+    text-decoration:none;
+      text-align:center;
+      color:white;
+      float:right;
+      margin-top: 0px;
+      padding:16px 20px;
+      transition: background .5s ease, color .5s ease;
+      font-size:20px;
+    
+  }
+  .nav-link:hover{
+    background:#800000;
+  }
+  #welcome-section {
+    background-color: #000;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    color:white;
+    height:100vh;
+    margin-top:60px;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:0px;
+  }
+  
+  h1 {
+    font-size:40px;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  #job{
+    font-style:italic;
+    font-size: 15px;
+    color: #be3144;
+  }
+  #profile-pic{
+    border-radius:50%;
+    width:300px;
+  }
+
+/* END NAV */
+
+
+
+
+/* START PROJECTS SECTION */
+
+  .projects-grid {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+       grid-template-rows: 1fr 1fr;
+       grid-gap:40px;
+  }
+  
+  #projects {
+    background-image:linear-gradient(to bottom left,#662200,#802b00);
+    color:white;
+    height:100vh;
+  }
+  .projects_header {
+      border-bottom: 2px solid white;
+      padding:20px;
+      font-family: 'Raleway', sans-serif;
+  }
+
+  .project {
+      background: #4d1a00;
+      border-radius:5px;
+  }
+  .code {
+      transition: color 0.3s ease-out;
+      color:#4d1a00;
+      
+  }
+     a:link {
+      text-decoration: none;
+  } 
+  
+  .project:hover .code {
+    color: #ff7f50;
+  }
+  .project-title {
+    font-size: 15px;
+   color: white;
+   font-family: 'Libre Baskerville', Helvetica;
+  }
+  .project-image {
+    width:300px;
+    height:220px;
+    margin:10px;
+  }
+  #tribute_page {
+    grid-column: 2/3;
+  }
+  #survey_form {
+    grid-column: 3/4;
+  }
+  #product_landing {
+    grid-column: 2/3;
+  }
+  #tech_doc {
+    grid-column: 3/4;
+  }
+
+.btn-show-all {
+    background: #4d1a00;
+    font-family: 'Libre Baskerville', Helvetica;
+    padding:10px;
+    color:white;
+    border-radius: 5px;
+    transition: 0.3s ease-out;
+}
+
+.btn-show-all:hover {
+background-color:#800000;
+
+}
+
+/* END PROJECTS SECTION */
+
+/* START COURSES SECTION */
+
+#courses {
+  background-image:linear-gradient(to bottom right,#262626,#4d4d4d);
+  color:white;
+}
+#course-header{
+  font-family: 'Raleway', sans-serif;
+}
+
+.course-description {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.course-name {
+  
+  font-size:36px;
+  font-weight: bold;
+}
+
+/* END COURSES SECTION */
+
+/* START CONTACT SECTION */
+
+  #contact {
+    background-image:linear-gradient(to bottom,#303841,#414c58);
+    height:100vh;
+    text-align: center;
+  }
+
+  #contact-hd {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+  }
+
+.contact-links {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .btn_contact {
+    padding:20px;
+    color:white;
+    font-size: 20px;
+    
+    font-weight: bold;
+    margin-top: 100px;
+    transition: transform 0.3s ease-out;
+  }
+
+  .btn_contact:hover {
+    transform: translateY(8px);
+  }
+
+    @media (max-width: 75em) {
+      html {
+        font-size: 60%;
+      }
+    }
+    
+    /* 980px / 16px = 61.25em */
+    @media (max-width: 61.25em) {
+      html {
+        font-size: 58%;
+      }
+    }
+    
+    /* 460px / 16px = 28.75em */
+    @media (max-width: 28.75em) {
+      html {
+        font-size: 55%;
+      }
+    }
+
+    @media (max-width: 28.75em) {
+      .nav {
+        justify-content: center;
+      }
+
+      @media (max-width: 28.75em) {
+        .projects-section-header {
+          font-size: 4rem;
+        }
+      }
+
+      @media (max-width: 30.625em) {
+        .projects-section {
+          padding: 6rem 1rem;
+        }
+
+        @media (max-width: 28.75em) {
+          .contact-section-header > h2 {
+            font-size: 4rem;
+          }
+        }
+        @media (max-width: 28.75em) {
+          footer {
+            flex-direction: column;
+            text-align: center;
+          }
+        }
+/* END CONTACT SECTION */
